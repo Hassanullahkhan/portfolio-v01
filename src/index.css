@@ -3,11 +3,8 @@
 
 body {
   font-family: Inter Tight;
-  @apply bg-gray-900;
+  background-color: #0a0a0a;
   color: #fff;
-}
-
-html {
   scroll-behavior: smooth;
 }
 
