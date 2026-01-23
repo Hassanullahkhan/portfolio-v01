@@ -6,6 +6,6 @@ import { ThemeProvider } from "./Context/ThemeContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <ThemeProvider>
-      <App />
-  </ThemeProvider>
+    <App />
+  </ThemeProvider>,
 );
