@@ -1,4 +1,5 @@
 import { User } from "lucide-react";
+import DownloadResume from "./DownloadResume";
 
 export default function About() {
   return (
@@ -19,8 +20,7 @@ export default function About() {
             }}
           >
             <h2 className="text-4xl font-bold  mb-6">
-              I am Rakesh, a full stack web developer and a programmer working
-              remotely in my home at Dhaka, Bangladesh
+              Driven to Continuous Growth and Technical Excellence
             </h2>
 
             <div
@@ -30,21 +30,23 @@ export default function About() {
               }}
             >
               <p>
-                I've spent the last 3+ years learning and working across
-                different areas of development: front-end development, back-end
-                development, UI/UX design and currently working for Monipuri
-                School and College Science Club as a Web Developer.
+                I'm Hassan, a developer who loves learning and staying curious.
+                I believe the best code comes from understanding the "why"
+                behind it, and I'm passionate about building solutions that
+                actually matter. I thrive on solving tricky problems and
+                collaborating with teams that push me to grow. I'm at my best
+                when I can contribute meaningfully while continuously improving
+                alongside talented colleagues.
               </p>
 
               <p>
-                These days my time is spent researching, designing, building
-                websites, and coding. I also love to learn and experiment with
-                new new things.
+                If you like to hire me, or see my resume, click on the download
+                button below
               </p>
             </div>
 
             <button className="mt-8 px-8 py-3 bg-gray-200 text-gray-900 rounded font-medium hover:bg-gray-100 transition-colors">
-              Download Resume
+              <DownloadResume />
             </button>
           </div>
         </div>

@@ -10,7 +10,7 @@ function App() {
     <div className="min-h-screen">
       <Header />
       <Hero />
-      <Services />
+      {/* <Services /> */}
       <Projects />
       <About />
       <Footer />

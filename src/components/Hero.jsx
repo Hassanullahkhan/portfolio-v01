@@ -1,4 +1,5 @@
 import { MapPin } from "lucide-react";
+import Downlaod from "./DownloadResume";
 
 const Hero = () => {
   const technologies = [
@@ -38,13 +39,13 @@ const Hero = () => {
           </p>
           <div className="flex items-center justify-center gap-4 mb-16">
             <button className="px-8 py-3 bg-gray-200 text-gray-900 rounded font-medium hover:bg-gray-100 transition-colors">
-              Get yours now
+              <Downlaod />
             </button>
             <button
               className="px-8 py-3 border bg-black border-gray-600 text-white rounded font-medium hover:bg-gray-800 hover:text-white transition-colors"
               id="/projects"
             >
-              See my works
+              See my Projects
             </button>
           </div>
 

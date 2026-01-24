@@ -3,23 +3,20 @@ import { Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      name: "MSCSC",
+      name: "Learning Management System",
       description:
-        "A vibrant ReactJS website for MSCSC, centralizing science, math, and space exploration. The platform features engaging events, adaptive member profiles, and a discussion board that supports community and fosters learning.",
+        "A learning management system built for students and working professionals who are focused on gaining practical skills, advancing their careers, and staying competitive in a fast-changing job market.",
     },
     {
-      name: "Weather Compass",
+      name: "Weather App",
       description:
-        "Real-time weather tracking application with location-based forecasts.",
+        "Real-time weather tracking application location based updates. React is applied for FrontEnd and OpenWeatherAPI for real-time weather data.",
     },
     {
-      name: "Astro Fest 1.0",
-      description: "Event management platform for astronomy enthusiasts.",
+      name: "Landing Page",
+      description: "A Simple Landing Page built with React and TailwindCSS.",
     },
-    {
-      name: "Colorize",
-      description: "Color palette generator and design tool for developers.",
-    },
+   
   ];
 
   return (
@@ -31,7 +28,7 @@ const Projects = () => {
           }}
           className="text-5xl font-bold  mb-12"
         >
-          Proof of Work
+          Projects I've Built
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-8">
