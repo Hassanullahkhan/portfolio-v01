@@ -10,7 +10,7 @@ const Header = () => {
   console.log(storedValue);
 
   useEffect(() => {
-    if(storedValue) {
+    if (storedValue) {
       document.documentElement.setAttribute("data-theme", "dark");
     } else {
       document.documentElement.setAttribute("data-theme", "light");
@@ -29,42 +29,60 @@ const Header = () => {
             Hassan
           </div>
 
-          <nav className="hidden md:flex text-sm items-center space-x-8">
+          <nav className="hidden md:flex text-md items-center space-x-8">
             <a
+              style={{
+                color: "var(--text-color)",
+              }}
               href="#home"
-              className="text-gray-300 hover:text-white transition-colors"
+              className="text-black hover:text-gray-900 transition-colors"
             >
               Home
             </a>
-            <a
+            {/* <a
               href="#services"
               className="text-gray-300 hover:text-white transition-colors"
             >
               Services
-            </a>
+            </a> */}
             <a
+              style={{
+                color: "var(--text-color)",
+              }}
               href="#projects"
-              className="text-gray-300 hover:text-white transition-colors"
+              className="text-black hover:text-gray-900 transition-colors"
             >
               Projects
             </a>
 
             <a
+              style={{
+                color: "var(--text-color)",
+              }}
               href="#about"
-              className="text-gray-300 hover:text-white transition-colors"
+              className="text-black hover:text-gray-900 transition-colors"
             >
               About
             </a>
 
-            <a
+            {/* <a
+              style={{
+                color: "var(--text-color)",
+              }}
               href="#faqs"
-              className="text-gray-300 hover:text-white transition-colors"
+              className="text-black hover:text-gray-900 transition-colors"
             >
               FAQs
-            </a>
+            </a> */}
           </nav>
 
-          <button className="hidden md:block px-6 py-2 bg-white text-gray-900 rounded hover:bg-gray-100 transition-all active:scale-x-95">
+          <button
+            style={{
+              backgroundColor: "var(--text-color)",
+              color: "var(--background-color)",
+            }}
+            className="hidden md:block px-6 py-2  text-white rounded hover:bg-gray-100 transition-all active:scale-x-95"
+          >
             Contact
           </button>
 
@@ -118,11 +136,14 @@ const Header = () => {
             >
               FAQs
             </a>
-            <button className="px-6 py-2 bg-white text-gray-900 rounded hover:bg-gray-100 transition-colors w-fit">
+            <button className="px-6 py-2 bg-gray-400 text-gray-900 rounded hover:bg-gray-100 transition-colors w-fit">
               Contact
             </button>
 
-            <button onClick={() => setStoredValue(!storedValue)}>
+            <button
+              className="flex absolute right-10 top-[40%]"
+              onClick={() => setStoredValue(!storedValue)}
+            >
               {storedValue ? <Moon /> : <Sun />}
             </button>
           </nav>

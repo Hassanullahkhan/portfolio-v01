@@ -1,21 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import "tailwindcss";
 
+html{ 
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Inter Tight;
   background-color: var(--background-color);
   color: var(--text-color);
-  scroll-behavior: smooth;
 }
 
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
-}
 
 :root {
   --background-color: #0a0a0a;

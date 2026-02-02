@@ -6,6 +6,7 @@ const Projects = () => {
       name: "Learning Management System",
       description:
         "A learning management system built for students and working professionals who are focused on gaining practical skills, advancing their careers, and staying competitive in a fast-changing job market.",
+        link: "https://github.com/Hassanullahkhan/LMS-Landing-Page-with-React#react--vite",
     },
     {
       name: "Weather App",
@@ -26,12 +27,12 @@ const Projects = () => {
           style={{
             color: "var(--text-color)",
           }}
-          className="text-5xl font-bold  mb-12"
+          className="text-5xl font-bold text-center mb-12"
         >
           Projects I've Built
         </h2>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -60,8 +61,10 @@ const Projects = () => {
                 }}
                 className="flex items-center justify-center gap-2 px-12 py-2 mt-2  dark:bg-gray-200 text-gray-900 rounded font-medium hover:bg-gray-100 transition-all active:scale-x-95"
               >
-                <Github size={24} />
-                View on Github
+                <a className="flex gap-2" href={project.link} target="_blank" rel="noopener noreferrer">
+                  <Github size={24} />
+                View On Github
+                </a>
               </button>
             </div>
           ))}

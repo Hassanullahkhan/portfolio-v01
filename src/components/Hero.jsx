@@ -2,21 +2,7 @@ import { MapPin } from "lucide-react";
 import Downlaod from "./DownloadResume";
 
 const Hero = () => {
-  const technologies = [
-    "JavaScript",
-    "ReactJS",
-    "Node",
-    "Express",
-    "Bootstrap",
-    "jQuery",
-    "PHP",
-    "MySQL",
-    "MongoDB",
-    "Git",
-    "GitHub",
-    "Figma",
-    "WordPress",
-  ];
+  const technologies = ["JavaScript", "ReactJS", "Git", "GitHub"];
 
   return (
     <div className="min-h-screen bg-linear-to-br pt-24 pb-16">
@@ -26,24 +12,22 @@ const Hero = () => {
             <MapPin size={20} />
             <span className="font-semibold text-xl">Karachi, Pakistan</span>
           </div>
-          <h1 className="text-5xl md:text-8xl font-semibold  mb-4 leading-24">
+          <h1 className="text-5xl md:text-8xl font-semibold mb-4 md:leading-24">
             I'm Hassan Khan Web Developer
           </h1>
           <p
             style={{ color: "var(--text-color)" }}
             className="mb-8 mx-auto text-xl font-semibold"
           >
-            I specialize in researching and analyzing your brand and provide you
-            a beautiful and effective website for making a digital standing
-            among your competitors
+            Aspiring frontend developer looking for hands-on experience while building and learning through real projects.
           </p>
           <div className="flex items-center justify-center gap-4 mb-16">
-            <button className="px-8 py-3 bg-gray-200 text-gray-900 rounded font-medium hover:bg-gray-100 transition-colors">
+            <button className="px-8 py-3 bg-gray-200 text-gray-900 rounded font-medium hover:bg-gray-300 hover:scale-x-95 transition-colors">
               <Downlaod />
             </button>
             <button
-              className="px-8 py-3 border bg-black border-gray-600 text-white rounded font-medium hover:bg-gray-800 hover:text-white transition-colors"
-              id="/projects"
+              className="px-8 py-3 border bg-black border-gray-600 text-white rounded font-medium hover:bg-gray-700 hover:scale-x-95 hover:text-white transition-colors"
+              id="projects"
             >
               See my Projects
             </button>
@@ -52,9 +36,9 @@ const Hero = () => {
           <div className="mt-34">
             <h1
               style={{ color: "var(--text-color)" }}
-              className="text-md tracking-wider mb-8"
+              className="text-xl italic tracking-wider mb-8"
             >
-              Technologies I use
+              Technologies I am familiar with
             </h1>
           </div>
 
@@ -62,7 +46,7 @@ const Hero = () => {
             {technologies.map((tech, index) => (
               <button
                 key={index}
-                className="px-4 py-2 rounded bg-neutral-950 text-gray-300 hover:border-gray-400 hover:text-white transition-colors duration-200 text-sm font-medium"
+                className="px-4 py-2 rounded bg-neutral-950 text-gray-300 hover:border-gray-400 hover:text-white transition-colors duration-200 text-xl font-medium"
               >
                 {tech}
               </button>

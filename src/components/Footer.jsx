@@ -14,7 +14,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-6">
             <a
-              href="#"
+              href="https://github.com/Hassanullahkhan"
               className=" hover:text-white transition-colors"
               aria-label="Github"
             >
